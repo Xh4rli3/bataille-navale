@@ -119,8 +119,19 @@ def Tir(event, appartenance_bateau, grille_tir):
         if appartenance_bateau[a][b]: #un bateau est touché
             Case(x1, y1, x2, y2, aire_jeu1)
             
+            if joueur == 0:
+                coule_j1 += 1
+            elif joueur == 1:
+                coule_j2 += 1
+            
         else:   #aucun bateau n'est touché
             Croix(x1, y1, x2, y2, aire_jeu1)
+            
+            if joueur == 0:
+                coule_j1 += 1
+            elif joueur == 1:
+                coule_j2 += 1
+                
         grille_tir[a][b] = True
 
 #trace une croix
@@ -220,7 +231,7 @@ aire_jeu1.bind("<Button-1>", lambda event : Tir(event, appartenance_bateau_j1, g
 
 fen.mainloop()
 """
-def Tour(bateaux_j1, bateaux_j2, grille_tir_j1, grille_tir_j2):
+def Tour(bateaux_j1, bateaux_j2, grille_tir_j1, grille_tir_j2, coule_j1, coule_j2 ):
     tour = 0
     
     while coule_j1 < nbcasestotal and coule_j2 < nbcasestotal:
