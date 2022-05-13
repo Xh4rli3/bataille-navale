@@ -195,3 +195,52 @@ Grille(aire_jeu2)
 aire_jeu1.bind("<Button-1>", lambda event : Tir(event, appartenance_bateau_j1, grille_tir_j1))
 
 fen.mainloop()
+"""
+def Tour(bateaux_j1, bateaux_j2, grille_tir_j1, grille_tir_j2):
+    
+    while joueur1!=fini and joueur2!=fini:
+        if joueur2 joué:
+
+            stock2 += casejouée
+            
+        else:
+
+            
+        
+def quijoue(bateaux_j1, bateaux_j2, grille_tir_j1, grille_tir_j2, appartenance_bateau_j1,appartenance_bateau_j2, ):
+    if tirsj1>tirsj2:
+        fen = Tk()
+
+        aire_jeu1 = Canvas(fen, width = taille_grille, height = taille_grille, bg = bleu_clair)
+        aire_jeu1.pack(side=LEFT, padx = 10, pady = 10)
+        aire_jeu2 = Canvas(fen, width = taille_grille, height = taille_grille, bg = bleu_clair)
+        aire_jeu2.pack(side = RIGHT, padx = 10, pady = 10)
+        Grille(aire_jeu1)
+        Grille(aire_jeu2)
+        aire_jeu1.bind("<Button-1>", lambda event : Tir(event, appartenance_bateau_j1, grille_tir_j1))
+        aire_jeu2
+        
+        fen.mainloop()
+    else:
+        fen = Tk()
+
+        aire_jeu1 = Canvas(fen, width=taille_grille, height=taille_grille, bg=bleu_clair)
+        aire_jeu1.pack(side=LEFT, padx=10, pady=10)
+        aire_jeu2 = Canvas(fen, width=taille_grille, height=taille_grille, bg=bleu_clair)
+        aire_jeu2.pack(side=RIGHT, padx=10, pady=10)
+        Grille(aire_jeu1)
+        Grille(aire_jeu2)
+        
+        aire_jeu1.bind("<Button-1>", lambda event : Tir(event, appartenance_bateau_j2, grille_tir_j2))
+        
+        fen.mainloop()
+        
+def fin(nbcasestotal):
+    
+    if len(stock1) == nbcasestotal:
+        fen.destroy()
+        fen = Tk()
+        tabFin = Canvas(fen, width = , height = )
+        texte = 
+    
+""" 
